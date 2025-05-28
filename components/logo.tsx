@@ -21,14 +21,14 @@ export const Logo = () => {
     return (
         <Link href="/">
             <div className="hover:opacity-75 transition items-center gap-x-2 
-            hidden md:flex">
+             md:flex">
                 <Image 
                 src="/logo.png" 
                 alt="logo"
                 height={40}
                 width={40}
                 />
-                <p className={cn("text-lg text-neutral-700 pb-1",
+                <p className={cn("text-lg text-neutral-700 pb-1 hidden md:block",
                 poppins.className,)}>PostUp</p>
             </div>
 
