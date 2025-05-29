@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 
 import { AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
@@ -9,12 +9,11 @@ export type Organization = {
     slug: string;
     name: string;
     imageUrl: string;
-}
+};
 
 interface NavItemProps {
     isExpanded: boolean;
     isActive: boolean;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     organization: any; // Pode ser do tipo Organization ou qualquer outro tipo que você esteja usando
     onExpand: (id: string) => void;
 
@@ -28,14 +27,14 @@ export const NavItem = ({
 }: NavItemProps) => {
     return (
         <AccordionItem
-        value="{organization.id}" // Use o ID da organização como valor do AccordionItem
+        value={organization.id} // Use o ID da organização como valor do AccordionItem
         className="border-none"
         >
             <AccordionTrigger
             onClick={() => onExpand(organization.id)} // Chama a função onExpand com o ID da organização
             className={cn(
                 "flex items-center gap-x-2 p-1.5 text-neutral-700 rounded-md hover:bg-neutral-500/10 transition text-start no-underline hover:no-underline",
-                isActive && !isExpanded && "bg-skt-500/10 text-sky-700"
+                isActive && !isExpanded && "bg-sky-500/10 text-sky-700"
             )}
             >
             <div className="flex items-center gap-x-2">

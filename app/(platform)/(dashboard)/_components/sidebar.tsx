@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 
 import Link from "next/link";
 import { Plus } from "lucide-react";
@@ -60,7 +60,7 @@ export const Sidebar = ({
     return (
         <>
         <div className="font-medium text-xs flex items-center justify-between px-4 mb-1">
-  <span className="text-black">Or</span>
+  <span className="text-black">Workspaces</span>
   <Button
     asChild
     type="button"
@@ -72,7 +72,6 @@ export const Sidebar = ({
     </Link>
   </Button>
 </div>
-
         <Accordion
             type="multiple"
             defaultValue={defaultAccordionValue}
