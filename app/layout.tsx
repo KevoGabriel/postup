@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
-    template: `%s | ${siteConfig.name}`, // Use template for dynamic titles
+    template: `%s | ${siteConfig.name}`, // Uso de template dinamico para o título
   },
   description: siteConfig.description,
   icons: [

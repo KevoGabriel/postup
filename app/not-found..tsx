@@ -5,4 +5,4 @@ export default function NotFound() {
       <p className="text-xl">Página não encontrada</p>
     </div>
   );
-}
+} // Componente de página 404 personalizada para o Next.js
