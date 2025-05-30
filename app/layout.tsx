@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     {
       url: "/logo.png",
       href: "/logo.png",
-    }
-  ]
+    },
+  ],
 };
 
 export default function RootLayout({
