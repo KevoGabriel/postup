@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PostUp – Clone do Trello em Desenvolvimento
 
-## Getting Started
+📌 **Projeto**: PostUp (clone do Trello)  
+🛠️ **Stack**: React + Clerk (autenticação), estado global, API própria/API-as-a-Service
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
+## Sobre o Projeto
+
+**PostUp** é inspirado no Trello, voltado para gerenciamento de tarefas por meio de quadros, listas e cartões.  
+O projeto busca fornecer uma alternativa leve para organização pessoal e colaborativa.
+
+Destaques:
+
+- Autenticação segura via **Clerk** (login, registro, recuperação)
+// > Exemplo: "Sign in with Clerk to start managing your boards"
+
+---
+
+## Funcionalidades Atuais
+
+- ✅ Registro e login via Clerk  
+- ✅ Criação e visualização de quadros (*boards*)  
+- ✅ Dentro dos quadros: criação de listas e cartões  
+- ✅ Drag & drop entre listas (implementação inicial)  
+- ✅ Estado global para sync entre componentes  
+- 🔄 Layout responsivo e boa experiência de uso
+
+---
+
+## Roadmap / Em Desenvolvimento
+
+- 🔜 Funcionalidade completa de drag & drop refinada  
+- 🔜 Edição, exclusão e reordenação de cartões e listas  
+- 🔜 Colaboração em tempo real
+- 🔜 Comentários e anexos em cartões  
+- 🔜 Busca, filtros e notificações  
+- 🔜 Integração com back-end persistente (Postgres, Supabase, etc.)
+
+---
+
+## Como Usar / Rodar Localmente
+
+# Clone o repositório
+git clone https://github.com/KevoGabriel/postup.git
+cd postup
+
+# Instale as dependências
+yarn install
+# ou
+npm install
+
+
+# Rode em modo de desenvolvimento
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<h1>Importante</h1>
+# Configure variáveis de ambiente (ex: CLERK_FRONTEND_API, CLERK_PUBLISHABLE_KEY)
+# Crie um .env com as chaves da sua conta Clerk
