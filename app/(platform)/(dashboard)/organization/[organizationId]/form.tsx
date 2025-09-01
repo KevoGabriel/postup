@@ -1,7 +1,7 @@
 import { createBoard } from "@/actions/create-board";
 import { FormInput } from "@/components/form/form-input";
-import { FormButton } from "./form-button";
 import { useAction } from "@/hooks/use-action";
+import { FormSubmit } from "@/components/form/form-submit";
 
 export const Form = () => {
   const { execute, fieldErrors } = useAction(createBoard, {
@@ -24,7 +24,7 @@ export const Form = () => {
       <div>
         <FormInput id="title" errors={fieldErrors} />
       </div>
-      <FormButton />
+      <FormSubmit>Save</FormSubmit>
     </form>
   );
 };
